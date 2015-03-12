@@ -53,7 +53,8 @@ RUN chmod +x /sbin/after_install
 
 #add files and script that need to be use for this container
 #include conf file relate to service/daemon 
-#additionsl tools to be use internally 
+#additionsl tools to be use internally
+COPY apache2.conf /etc/apache2/apache2.conf
 
 # to allow access from outside of the container  to the container service
 # at that ports need to allow access from firewall if need to access it outside of the server. 
