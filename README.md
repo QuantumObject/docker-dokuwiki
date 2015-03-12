@@ -15,3 +15,7 @@ docker exec -it container_id after_install
 for any idea how to improve this container please use this link :
 
 [https://github.com/QuantumObject](https://github.com/QuantumObject)
+
+for more info about dokuwiki :
+
+[https://www.dokuwiki.org/](https://www.dokuwiki.org/)
