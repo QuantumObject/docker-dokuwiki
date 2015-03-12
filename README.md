@@ -6,7 +6,7 @@ To run the container ...
 
 docker run -d -p xxxx:80 quantumobject/docker-dokuwiki
 
-Check port and point your brownser to https://[ip]:xxxx/install.php  to initially configure your DokuWiki.
+Check port and point your brownser to http://[ip]:xxxx/install.php  to initially configure your DokuWiki.
 
 when done please execute this command for security and remove the install script ..
 
