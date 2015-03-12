@@ -9,8 +9,8 @@ RUN apt-get update && apt-get install -y -q apache2 libapache2-mod-php5 \
                     && cd /var/www   \
                     && wget http://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz \
                     && tar xvf dokuwiki-stable.tgz \
-                    && mv dokuwiki-* dokuwiki \
                     && rm dokuwiki-stable.tgz \
+                    && mv dokuwiki-* dokuwiki \
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
                     && rm -rf /var/lib/apt/lists/*
