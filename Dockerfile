@@ -1,6 +1,6 @@
 #name of container: docker-dokuwiki
-#versison of container: 0.1.0
-FROM quantumobject/docker-baseimage
+#versison of container: 0.1.2
+FROM angelrr7702/docker-baseimage
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
 #add repository and update the container
@@ -37,9 +37,6 @@ COPY pre-conf.sh /sbin/pre-conf
 RUN chmod +x /sbin/pre-conf \
     && /bin/bash -c /sbin/pre-conf \
     && rm /sbin/pre-conf
-
-#down/shutdown script ... use to be run in container before stop or shutdown .to keep service..good status..and maybe
-#backup or keep data integrity .. 
 
 ##scritp that can be running from the outside using docker-bash tool ...
 ## for example to create backup for database with convitation of VOLUME   dockers-bash container_ID backup_mysql
