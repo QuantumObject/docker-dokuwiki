@@ -33,6 +33,8 @@ About dokuwiki[www.dokuwiki.org][1]
 
 To help improve this container [quantumobject/docker-dokuwiki][5]
 
+For additional info about us and our projects check our site [www.quantumobject.com][11]
+
 [1]:https://www.dokuwiki.org
 [2]:https://www.docker.com
 [3]:http://download.dokuwiki.org/
@@ -43,3 +45,4 @@ To help improve this container [quantumobject/docker-dokuwiki][5]
 [8]:https://www.dokuwiki.org/acl
 [9]:https://www.dokuwiki.org/auth
 [10]:https://www.dokuwiki.org/plugins
+[11]:http://www.quantumobject.com/
