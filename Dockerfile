@@ -1,6 +1,6 @@
 #name of container: docker-dokuwiki
-#versison of container: 0.1.2
-FROM angelrr7702/docker-baseimage
+#versison of container: 0.2.1
+FROM quantumobject/docker-baseimage
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
 #add repository and update the container
