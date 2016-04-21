@@ -27,13 +27,19 @@ when done please execute this command for security and remove the install script
 
     $ docker exec -it container_id after_install
 
+note: deploy this container behind proxy with SSL for extra security:
+
+https://github.com/jwilder/nginx-proxy
+
+https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion
+
 ## More Info
 
 About dokuwiki[www.dokuwiki.org][1]
 
 To help improve this container [quantumobject/docker-dokuwiki][5]
 
-For additional info about us and our projects check our site [www.quantumobject.com][11]
+For additional info about us and our projects check our site [www.quantumobject.org][11]
 
 [1]:https://www.dokuwiki.org
 [2]:https://www.docker.com
@@ -45,4 +51,4 @@ For additional info about us and our projects check our site [www.quantumobject.
 [8]:https://www.dokuwiki.org/acl
 [9]:https://www.dokuwiki.org/auth
 [10]:https://www.dokuwiki.org/plugins
-[11]:http://www.quantumobject.com/
+[11]:https://www.quantumobject.org/
