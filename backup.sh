@@ -15,12 +15,7 @@ if [ -d "/var/www/dokuwiki/data/media/wiki/backup.tar.gz" ]; then
 fi
 
 mkdir  /var/backups/docker
-
-#Backup important file ... of the configuration ...
-cp  /etc/hosts  /var/backups/docker/
-
 #Backup importand files relate to app
-
 cp -R /var/www/dokuwiki/conf  /var/backups/docker
 cp -R /var/www/dokuwiki/data/pages  /var/backups/docker
 cp -R /var/www/dokuwiki/data/meta  /var/backups/docker
@@ -32,5 +27,3 @@ cd /tmp
 tar -zcvf backup.tar.gz /var/backups/docker
 cp backup.tar.gz /var/www/dokuwiki/data/media/wiki/
 rm backup.tar.gz
-
-
