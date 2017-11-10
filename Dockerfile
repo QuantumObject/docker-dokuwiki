@@ -1,11 +1,12 @@
 #name of container: docker-dokuwiki
-#versison of container: 0.2.3
-FROM quantumobject/docker-baseimage:15.10
+#versison of container: 0.3.1
+FROM quantumobject/docker-baseimage:16.04
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
 #add repository and update the container
 #Installation of nesesary package/software for this containers...
-RUN apt-get update && apt-get install -y -q apache2 libapache2-mod-php5 \
+RUN apt-get update && apt-get install -y -q apache2 libapache2-mod-php7.0 \
+                    php7.0 php7.0-xml php7.0-mbstring\
                     && cd /var/www   \
                     && wget http://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz \
                     && tar xvf dokuwiki-stable.tgz \
