@@ -6,6 +6,7 @@ MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 #add repository and update the container
 #Installation of nesesary package/software for this containers...
 RUN apt-get update && apt-get install -y -q apache2 libapache2-mod-php7.0 \
+                    php7.0 php7.0-xml php7.0-mbstring\
                     && cd /var/www   \
                     && wget http://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz \
                     && tar xvf dokuwiki-stable.tgz \
