@@ -19,9 +19,9 @@ To install docker in Ubuntu 18.04 use the commands:
 
 To run container use the command below:
 
-    $ docker run -d -p xxxx:80 quantumobject/docker-dokuwiki
+    $ docker run -d -p 80:80 --name dokuwiki quantumobject/docker-dokuwiki
 
-Check port and point your browser to http://[ip]:xxxx/install.php  to initially configure your DokuWiki.
+Check port and point your browser to http://[ip]/install.php  to initially configure your DokuWiki.
 
 when done please execute this command for security and remove the install script:
 

@@ -11,3 +11,8 @@ set -e
  #to fix error relate to ip address of container apache2
  echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf
  ln -s /etc/apache2/conf-available/fqdn.conf /etc/apache2/conf-enabled/fqdn.conf
+ 
+ #in case used of VOLUME
+ 
+cp -Rp /var/www/dokuwiki/conf /var/backups
+cp -Rp /var/www/dokuwiki/data /var/backups
