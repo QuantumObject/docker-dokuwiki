@@ -27,6 +27,13 @@ when done please execute this command for security and remove the install script
 
     $ docker exec -it container_id after_install
 
+## Volume for dokuwiki container
+
+-v /home/linux_user/dokuwiki/conf:/var/www/dokuwiki/conf
+
+-v /home/linux_user/dokuwiki/data:/var/www/dokuwiki/data
+
+
 note: deploy this container behind proxy with SSL for extra security:
 
 https://github.com/jwilder/nginx-proxy
