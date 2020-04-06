@@ -50,6 +50,7 @@ RUN chmod +x /sbin/after_install
 #additionsl tools to be use internally
 COPY apache2.conf /etc/apache2/apache2.conf
 
+VOLUME /var/www/dokuwiki/conf  /var/www/dokuwiki/data
 # to allow access from outside of the container  to the container service
 # at that ports need to allow access from firewall if need to access it outside of the server. 
 EXPOSE 80
