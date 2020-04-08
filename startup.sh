@@ -8,6 +8,7 @@ if [ "$(ls -A /var/www/dokuwiki/conf)" ]; then
 else
     cp -Rp /var/backups/conf/* /var/www/dokuwiki/conf/ 
     chown www-data:www-data /var/www/dokuwiki/conf
+    chmod 750 /var/www/dokuwiki/conf
 fi
 # for the other folder Volume
 if [ "$(ls -A /var/www/dokuwiki/data)" ]; then
@@ -15,6 +16,7 @@ if [ "$(ls -A /var/www/dokuwiki/data)" ]; then
 else
     cp -Rp /var/backups/data/* /var/www/dokuwiki/data/ 
     chown www-data:www-data /var/www/dokuwiki/data
+    chmod 750 /var/www/dokuwiki/data
 fi
 
 # if already configured continue
