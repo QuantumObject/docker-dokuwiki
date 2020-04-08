@@ -6,7 +6,7 @@ set -e
 if [ "$(ls -A /var/www/dokuwiki/conf)" ]; then
     echo "conf folder with data"    
 else
-    cp -Rp /var/backups/conf/* /var/www/dokuwiki/conf/ 
+    cp -Rp /var/backups/conf/. /var/www/dokuwiki/conf/ 
     chown www-data:www-data /var/www/dokuwiki/conf
     chmod 750 /var/www/dokuwiki/conf
 fi
@@ -14,7 +14,7 @@ fi
 if [ "$(ls -A /var/www/dokuwiki/data)" ]; then
     echo "data folder with data"    
 else
-    cp -Rp /var/backups/data/* /var/www/dokuwiki/data/ 
+    cp -Rp /var/backups/data/. /var/www/dokuwiki/data/ 
     chown www-data:www-data /var/www/dokuwiki/data
     chmod 750 /var/www/dokuwiki/data
 fi
